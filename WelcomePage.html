@@ -1,0 +1,46 @@
+<div  ng-style="{'color': user.color, 'font-size': user.font+'px'}">
+  <div class="row">  
+    <div class="col-sm-10">
+      <p>Welcome {{user.name}} to My Awesome Site. </p>
+    </div>
+    <div class="col-sm-2">
+      <a href="#/logout" class="btn btn-danger">Logout</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <h3>User Preferences Form</h3>    
+    </div>
+  </div>
+  <form name="UserPreferencesForm" onsubmit="return false;" class="form-horizontal" ng-submit="submitUserPreferences(UserPreferencesForm)" >
+    <div class="form-group">
+      <div class="col-sm-12">
+        <div ng-if="preference_form_success" class="alert alert-success">{{preference_form_msg}}</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputEmail3" class="col-sm-2 control-label">Color</label>
+      <div class="col-sm-10">
+        <input type="color" ng-model="user.color" name="user[color]" placeholder="Please select your favorite color" class="form-control">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputEmail3" class="col-sm-2 control-label">Font Size</label>
+      <div class="col-sm-10">
+        <input type="text" ng-model="user.font" placeholder="Please enter font size" name="user[font]" class="form-control">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputEmail3" class="col-sm-2 control-label">Page Title</label>
+      <div class="col-sm-10">
+        <input type="text" ng-model="user.title" placeholder="Please enter page title" name="user[title]" class="form-control">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-4 col-sm-8">
+        <input type="submit" value="Change User Preferences" class="btn btn-lg btn-success">
+      </div>
+    </div>
+  
+  </form>
+</div>
