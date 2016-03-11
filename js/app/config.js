@@ -1,4 +1,5 @@
-/* Defining configurations for App */
+'use strict';
+/* Configured routes for Spa App */
 spaApp.config(function($stateProvider, $urlRouterProvider, localStorageServiceProvider){  
   localStorageServiceProvider.setPrefix('spaApp');
   localStorageServiceProvider.setStorageType('sessionStorage');

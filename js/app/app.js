@@ -1,5 +1,5 @@
 'use strict';
-/* Defining Angular App */
+/* Defined Angular App */
 var spaApp = angular.module("spaApp", ['ui.router', 'LocalStorageModule']);
 
 

@@ -1,3 +1,5 @@
+'use strict';
+/* Defined user Service to fetch user details from api and to return user details */
 spaApp.service('userService', function($http, storageService) {
   var currentUser = {};
   var preference = {}

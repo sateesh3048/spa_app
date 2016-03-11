@@ -1,3 +1,5 @@
+'use strict';
+/* Defined storage Service to store user preferences i.e user eamil, web page font, color, title */
 spaApp.service("storageService", function(localStorageService){
   var setData = function(user){
     localStorageService.set('name', user.name);
