@@ -1,5 +1,5 @@
 <h3 class="text-center">Login Form</h3>
-<div ng-controller="SessionCtrl">
+<div ng-controller="signinController">
   <form name="loginForm" onsubmit="return false;" novalidate ng-submit="submit(loginForm)" class="form-horizontal">
     <div ng-if="server_errors" class="alert alert-danger">{{server_errors}}</div>
     <div ng-show="loginForm.$submitted || loginForm.email.$touched" class="alert alert-danger">
